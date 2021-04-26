@@ -6,6 +6,8 @@
 
 데이터를 섞음으로써 데이터 증강효과, 과적합방지
 
+<br/>
+
 
 
 ## 2. Label Smoothing
@@ -20,7 +22,13 @@
 
 Label 같은 경우에는 사람이 Label하는 경우 Labeling이 잘못되어 있는 경우가 있음, 그렇기 때문에 soft labeling을 통해 이를 어느정도 완화시킬 수 있음
 
+<br/>
 
+
+
+
+
+#### CIFAR10 데이터 기준 Mixup과 Label Smoothing 사용시 정확도 약 94% -> 95%
 
 
 
