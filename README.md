@@ -29,5 +29,15 @@
 
 - ### High-Performance Large-Scale Image Recognition Without Normalization
 
-- 
+  
 
+
+#### 
+
+
+
+## Natural Language Processing
+
+- ### DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter
+
+  
