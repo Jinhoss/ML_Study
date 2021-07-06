@@ -40,4 +40,6 @@
 
 - ### DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter
 
+- Sentence bert
+
   
