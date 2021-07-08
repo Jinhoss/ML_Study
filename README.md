@@ -40,6 +40,6 @@
 
 - ### DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter
 
-- Sentence bert
+- #### Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
 
-  
+- 
