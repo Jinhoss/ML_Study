@@ -45,7 +45,55 @@ n-1만큼의 BERT network를 거쳐야하기 때문,
 
 ## Model
 
+BERT의 output에 pooling layer를 추가, 논문에서는 pooling 전략 3가지에 대해서 소개
+
+1. CLS 토큰의 결과를 사용
+2. 모든 output vector를 평균하여 사용
+3. output vector의 max-over-time을 계산해서 사용
+
+기본적으로 2번 방법을 사용
+
+BERT를 fine-tuning하기 위해 siamse network/ triplet/network를 추가, 이를 이용해서 weight를 조정
+
+모델 구조는 학습 데이터에 따라 다름
 
 
 
+#### 1) Classification Objective Function
+
+![sentencebert1](../../sentencebert1.PNG)
+
+각 문장에서 생성되는 벡터 u, v 그리고 그 거리를 concat하여 입력, loss는 cross-entropy로 설정
+
+
+
+#### 2) Regression Objective Function
+
+![sbert2](../../sbert2.PNG)
+
+코사인 유사도를 계싼, MSE를 loss로 사용
+
+
+
+#### 3) Triplet Objective Function
+
+![sbert3](../../sbert3.PNG)
+
+anchor/positive/negative 문장 a, p, n에 대해 triplet loss는 위와 같다. s는 각문장 의 임베딩이고
+
+epsilon은 margin이다, 이 논문에서 Euclidean 거리를 단위로 epsilon = 1로 설정
+
+
+
+## Ablation Study
+
+... 중략, Classification objective function을 학습할 때에는 pooling 전략의 차이는 큰 영향이 없음
+
+어떤 것을 concat하느냐에 따라 성능의 차이가 큼, inferSent나 Universal Sentence Encoder는 u*v를 추가했는데, SBERT에서는 이를 추가하면 오히려 성능이 감소
+
+가장 중요한 요소는 두 임베딩의 거리이다. 비슷한 벡터는 가깝게, 비슷하지 않은 벡터는 멀게 하도록 도와줌
+
+
+
+반면, Regression objective function을 학습할 때에는 pooling 전략이 큰 영향을 미침
 

@@ -32,9 +32,6 @@
   
 
 
-#### 
-
-
 
 ## Natural Language Processing
 
@@ -42,4 +39,12 @@
 
 - #### Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
 
-- 
+
+
+
+
+
+### 정리해야할 것들...
+
+arcface, siamese/triplet network, faiss, dec 
+
