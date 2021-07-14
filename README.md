@@ -1,4 +1,4 @@
-# DL-Study 
+# ML-Study 
 
 
 
@@ -28,6 +28,10 @@
 - ### Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks (NIPS 2015)
 
 - ### High-Performance Large-Scale Image Recognition Without Normalization
+
+- ### Siamese Neural Networks for One-shot Image Recognition
+
+- 
 
   
 
