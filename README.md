@@ -48,7 +48,3 @@
 
 
 
-### 정리해야할 것들...
-
-arcface, siamese/triplet network, faiss, dec 
-
