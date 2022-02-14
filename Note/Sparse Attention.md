@@ -83,9 +83,9 @@ __Star Transformer__
 - Satellite Node의 Update 절차
   - 주변의 Satellite Node, embedding Node, Relay Node를 모아서 Multi attention 진행
 
-​	![attention4](Sparse Attention.assets/attention4.PNG)		
+​		
 
-- Implications
+- Implications![attention4](Sparse Attention.assets/attention4.PNG)
   - Band Attention과 Global Attention이 상호작용
   - Originatl Transformer Complexity: O(n^2 * d)
   - Star Transformer (ring conn): O(5nd)
@@ -200,7 +200,6 @@ __Content Based Sparse Attention의 목적__
   MIPS = argmax_{k\in K}(q^Tk)
   $$
   
-
 - (Exact) MIPS를 근사하기 위한 여러 전략이 있으며, Transformer에서는 
   - Locality-Sensitive Hashing(LSH):Reformer
   - Nearest Neighbor Search(NNS): Routing Transformer
